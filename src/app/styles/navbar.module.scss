@@ -1,0 +1,34 @@
+@use "./variable.module.scss";
+
+.navbarcontainer {
+	display: none;
+}
+
+@media (min-width: 600px) {
+	.navbarcontainer {
+		display: block;
+		width: 100%;
+		background-color: variable.$dark-grey-bg-color;
+		// padding: 1rem;
+
+		.navlist {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			// border: 1px solid red;
+
+			.navitem {
+				color: variable.$navy-blue-text-color;
+				list-style: none;
+				text-decoration: none;
+				padding: 1rem;
+				height: 100%;
+				cursor: pointer;
+				&:hover {
+					background-color: variable.$light-grey-bg-color;
+				}
+			}
+		}
+	}
+}

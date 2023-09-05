@@ -1,0 +1,39 @@
+@use "./variable.module.scss";
+
+.promocontainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0.3rem;
+	margin-top: 1.3rem;
+	cursor: pointer;
+
+	.promoinnercontainer {
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 0.1rem 0.7rem;
+		background-color: variable.$dark-grey-bg-color;
+		border-radius: 0.8rem;
+
+		.title {
+			font-weight: 500;
+		}
+
+		.promodesc {
+			font-size: 0.9rem;
+		}
+
+		.imagecontainer {
+			width: fit-content;
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	.promocontainer {
+		display: none;
+	}
+}
