@@ -120,3 +120,14 @@
 	font-size: 1.5rem;
 	font-weight: 400;
 }
+
+@media (min-width: 600px) {
+	.cartcontainer {
+		display: flex;
+		flex-direction: column;
+	}
+	.orderdetails {
+		width: fit-content;
+		align-self: center;
+	}
+}

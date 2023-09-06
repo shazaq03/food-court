@@ -4,8 +4,9 @@
 	width: 100%;
 	height: 100vh;
 	position: absolute;
-	background-color: #000;
-	overflow-x: scroll;
+	background-color: variable.$dark-grey-bg-color;
+	overflow-x: hidden;
+	overflow-y: scroll;
 
 	.carttrigger {
 		position: fixed;
@@ -119,5 +120,16 @@
 				}
 			}
 		}
+	}
+}
+
+@media (min-width: 600px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	.menucontainer {
+		width: fit-content;
+		align-self: center;
 	}
 }

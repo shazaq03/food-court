@@ -24,7 +24,7 @@ export default function Home() {
 						/>
 					</div>
 					<div className={style.textcontainer}>
-						<p className={style.vendorname}>Test Vendor</p>
+						<p className={style.vendorname}>Click ME</p>
 						<Image
 							src="/arrow.png"
 							width={20}
