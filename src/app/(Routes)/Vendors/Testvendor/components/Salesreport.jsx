@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Salesreport() {
 	return (
 		<div className={style.container}>
-			<h2 className={style.title}>Today's Sales</h2>
+			<h2 className={style.title}>Today &apos; s Sales</h2>
 
 			<div className={style.statscontainer}>
 				<div className={style.statcontainer}>
